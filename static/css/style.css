@@ -1,0 +1,1647 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(28, 33, 46);
+    color: rgb(225, 225, 225);
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+main{
+    position: relative;
+    height: 100%;
+}
+
+/* Menu Principal */
+nav{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: currentColor;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(225, 225, 225);
+    border-bottom: solid 0px turquoise;
+}
+nav ul li a:hover{
+    transition: .25s;
+    color: rgb(173, 172, 172);
+    border-bottom: solid 2px turquoise;
+}
+#botao-menu{
+    display: none;
+}
+.bi-list{
+    display: block;
+}
+.projeto-login{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(46, 54, 75);
+    border-radius: 10px;
+    border-top: solid 3px turquoise;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* Cabeçalho */
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: linear-gradient(transparent, transparent, rgb(46, 54, 75));
+}
+.cabecalho-descricao span{
+    color: turquoise;
+}
+.botao{
+    color: turquoise;
+    background-color: transparent;
+    border: solid 2px turquoise;
+    text-decoration: none;
+}
+.botao:hover{
+    transition: .5s;
+    color: rgb(28, 33, 46);
+    background-color: turquoise;
+    border: solid 2px rgb(28, 33, 46);
+}
+.cabecalho-img{
+    border-radius: 10%;
+}
+
+/* Seção Sobre */
+#sobre{
+    display: flex;
+    background-color: rgb(46, 54, 75);
+}
+.perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#eu{
+    border: solid 4px turquoise;
+}
+.perfil-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.perfil-desc ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-desc ul li a svg:hover{
+    transition: .5s;
+    scale: 1.15;
+}
+.bi-linkedin, .bi-github, .bi-telephone-outbound-fill, .bi-envelope-open-fill, .bi-facebook{
+    fill: turquoise;
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.titulos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.titulos .bi-stop-btn{
+    fill: turquoise;
+}
+
+/* Seção de habilidades */
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#habilidades ul{
+    list-style: none;
+    display: flex;
+}
+#habilidades ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.habilidades-icons:hover, .javascript-icon:hover{
+    transition: .5s;
+    scale: 1.1;
+}
+.javascript-icon{
+    background-color: yellow;
+    border-radius: 10px;
+}
+.nivel, .nivel2, .nivel3, .nivel4{
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+.nivel div{
+    background-color: #3770a0;
+    border: solid 2px #3770a0;
+    border-radius: 2px;
+}
+.nivel2 div{
+    border: solid 2px rgb(0, 87, 0);
+    border-radius: 2px;
+}
+.nivel3 div{
+    background-color: yellow;
+    border: solid 2px yellow;
+    border-radius: 2px;
+}
+.nivel4 div{
+    background-color: #00546b;
+    border: solid 2px #00546b;
+    border-radius: 2px;
+}
+
+/* Seção Portfólio */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(46, 54, 75);
+    border-radius: 10px;
+    border-top: 4px solid turquoise;
+}
+
+.projeto-inner, .projeto-hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.projeto-hover-tec{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.projeto-tecnologias{
+    height: auto;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid turquoise;
+    padding: 5%;
+    margin: 2%;
+    color: turquoise;
+    background-color: transparent;
+}
+.botao2{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: turquoise;
+    background-color: rgb(28, 33, 46);
+}
+.botao2:hover{
+    transition: .5s;
+    background-color: turquoise;
+    color: rgb(28, 33, 46);
+}
+
+/* Formulários */
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+#formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4%;
+    margin: 2% auto;
+    width: 80%;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 1% 0;
+}
+.form-control{
+    background: whitesmoke;
+    padding: 1%;
+    border: 0;
+    width: 95%;
+}
+
+/* Seção Blog */
+#blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+.post-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Seção de Post */
+#post{
+    display: flex;
+    flex-direction: column;
+    background: rgb(46, 54, 75);
+}
+.post-footer span{
+    color: rgb(156, 155, 155);
+    text-shadow: .5px .5px 4px rgb(37, 37, 37);
+}
+
+/* Seção Contato */
+#contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+.contato-itens{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: grey;
+}
+.contato-itens a:hover{
+    scale: 1.05;
+    transition: .5s;
+    color: whitesmoke;
+}
+.contato-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: grey;
+}
+
+/* Rodapé */
+footer{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0%;
+    color: grey;
+    background-color: rgb(22, 26, 35);
+    border-bottom: solid 4px turquoise;
+}
+footer strong{
+    color: rgb(52, 179, 166);
+}
+
+/* Small Devices (Smartphones) */
+@media (max-width: 575.98px) {
+    body{
+        font-size: .9rem;
+    }
+    nav{
+        flex-direction: column;
+        background-color: whitesmoke;
+        justify-content: space-around;
+        overflow: hidden;
+        padding: 2%;
+    }
+    .hamburger-menu{
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo{
+        left: 0;
+        width: 50px;
+    }
+    #botao-menu{
+        display: block;
+        background: transparent;
+        border: 2px solid rgb(46, 54, 75);
+        border-radius: 10px;
+    }
+    #botao-menu:hover{
+        transition: .5s;
+        background-color: grey;
+    }
+    #lista{
+        display: none;
+    }
+    .bi-list{
+        fill: rgb(46, 54, 75);
+        width: 40px;
+    }
+    .projeto-login{
+        width: 50%;
+        padding: 2%;
+        margin: 5% 2% 2% 2%;
+    }
+    nav ul{
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: 2% 0;
+    }
+    nav ul li a{
+        color: rgb(46, 54, 75);
+    }
+    nav ul li a:hover{
+        font-weight: bold;
+        color: #00546b;
+    }
+    .cabecalho{
+        flex-direction: column;
+        padding: 7% 1%;
+    }
+    .cabecalho img{
+        display: none;
+    }
+    .cabecalho-descricao{
+        width: 80%;
+        margin: 2% auto;
+    }
+    .cabecalho-descricao p{
+        margin-bottom: 5%;
+    }
+    .botao{
+        padding: 1.5% 4%;
+    }
+    #lista li .botao{
+        color: rgb(46, 54, 75);
+        border: solid 2px rgb(46, 54, 75);
+        margin-left: -25%;
+        padding: 10% 50%;
+    }
+    #lista li .botao:hover{
+        transition: .5s;
+        background-color: rgb(46, 54, 75);
+        color: whitesmoke;
+        border: none;
+    }
+    #sobre{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 7% 1%;
+    }
+    #sobre h2{
+        display: none;
+    }
+    .perfil{
+        margin: 0 auto;
+        width: 50%;
+        padding: 4%;
+    }
+    #eu{
+        width: 200px;
+        padding: 2%;
+        margin: 0 auto 4% auto;
+        border-radius: 50%;
+    }
+    .perfil-desc h3{
+        display: none;
+    }
+    .perfil-desc ul li{
+        margin: 2% 25% 2% -8%;
+    }
+    .bi-linkedin, .bi-facebook, .bi-github, .bi-envelope-open-fill, .bi-telephone-outbound-fill{
+        width: 30px;
+    }
+    #habilidades ul{
+        margin: 2% auto;
+    }
+    .descricao{
+        width: 80%;
+        padding: 4%;
+    }
+    .descricao .titulos{
+        margin: 0;
+        width: 25%;
+    }
+    .titulos{
+        width: 25%;
+        margin: 0 auto;
+    }
+    .titulos h2{
+        margin-left: 3%;
+    }
+    .titulos .bi-stop-btn{
+        display: none;
+    }
+    #habilidades{
+        padding: 5%;
+    }
+    #habilidades ul{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #habilidades ul li{
+        height: 120px;
+        padding: 2%;
+        margin: 2% 5%;
+    }
+    .habilidades-icons{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .javascript-icon{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .nivel, .nivel2, .nivel3, .nivel4{
+        width: 100px;
+        height: 5px;
+    }
+    .nivel div{
+        width: 85px;
+    }
+    .nivel2 div{
+        width: 75px;
+    }
+    .nivel3 div{
+        width: 55px;
+    }
+    .nivel4 div{
+        width: 65px;
+    }
+    #portfolio{
+        padding: 5%;
+    }
+    .portfolio-itens{
+        flex-wrap: wrap;
+        padding: 4%;
+    }
+    .projeto{
+        width: 275px; 
+        height: auto;
+        padding: 5%;
+        margin: 2%;
+    }
+    #projeto1-hover, #projeto2-hover{
+        width: 275px;
+        height: 390px;
+    }
+    .projeto-hover-tec{
+        width: 275px;
+    }
+    #projeto1-hover button, #projeto2-hover button{
+        max-width: 100px;
+        padding: 5%;
+        margin: 1%;
+    }
+    .botao2{
+        width: 100px;
+        height: auto;
+        padding: 5%;
+        margin: 1%;
+    }
+    .projeto-img{
+        width: 235px;
+        height: 235px;
+        margin-bottom: 5%;
+    }
+    #blog{
+        padding: 2% 4%;
+    }
+    #blog .botao:nth-child(1){
+        width: 100px;
+        height: auto;
+        padding: 1%;
+        margin: 0 auto;
+    }
+    .posts{
+        margin: 2%;
+        padding: 5%;
+    }
+    #post{
+        width: 100%;
+        padding: 3%;
+        margin: 2% auto 5% auto;
+    }
+    .post-footer{
+        flex-direction: column;
+    }
+    #contato{
+        padding: 5%;
+    }
+    #contato p{
+        text-align: justify;
+        width: 80%;
+        margin: 2% auto;
+    }
+    .contato-itens{
+        flex-wrap: wrap;
+        width: 80%;
+        padding: 4%;
+    }
+    .contato-item{
+        width: 80%;
+        margin: 2% auto;
+    }
+    .contato-item span{
+        margin: 0 2%;
+    }
+    footer{
+        padding: 1.5%;
+    }
+}
+/* Responsividade */
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px){
+    body{
+        font-size: .9rem;
+    }
+    nav{
+        flex-direction: column;
+        background-color: whitesmoke;
+        justify-content: space-around;
+        overflow: hidden;
+        padding: 2%;
+    }
+    .hamburger-menu{
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo{
+        left: 0;
+        width: 50px;
+    }
+    #botao-menu{
+        display: block;
+        background: transparent;
+        border: 2px solid rgb(46, 54, 75);
+        border-radius: 10px;
+    }
+    #botao-menu:hover{
+        transition: .5s;
+        background-color: grey;
+    }
+    #lista{
+        display: none;
+    }
+    .bi-list{
+        fill: rgb(46, 54, 75);
+        width: 40px;
+    }
+    .projeto-login{
+        width: 50%;
+        padding: 2%;
+        margin: 5% 2% 2% 2%;
+    }
+    nav ul{
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: 2% 0;
+    }
+    nav ul li a{
+        color: rgb(46, 54, 75);
+    }
+    nav ul li a:hover{
+        font-weight: bold;
+        color: #00546b;
+    }
+    .cabecalho{
+        padding: 7% 1%;
+    }
+    .cabecalho-descricao{
+        width: 60%;
+        margin: 4%;
+    }
+    .cabecalho-descricao p{
+        margin-bottom: 5%;
+    }
+    .botao{
+        padding: 1.5% 4%;
+    }
+    #lista li .botao{
+        color: rgb(46, 54, 75);
+        border: solid 2px rgb(46, 54, 75);
+        margin-left: -25%;
+        padding: 10% 50%;
+    }
+    #lista li .botao:hover{
+        transition: .5s;
+        background-color: rgb(46, 54, 75);
+        color: whitesmoke;
+        border: none;
+    }
+    .cabecalho-img{
+        width: 40%;
+        margin: 4%;
+    }
+    #sobre{
+        padding: 7% 1%;
+    }
+    .perfil{
+        width: 35%;
+        padding: 4%;
+    }
+    #eu{
+        width: 250px;
+        padding: 2%;
+        border-radius: 50%;
+    }
+    .perfil-desc ul li{
+        margin: 2% 25% 2% -8%;
+    }
+    .bi-linkedin, .bi-facebook, .bi-github, .bi-envelope-open-fill, .bi-telephone-outbound-fill{
+        width: 30px;
+    }
+    #habilidades ul{
+        margin: 2% auto;
+    }
+    .descricao{
+        width: 65%;
+        padding: 4%;
+    }
+    .descricao .titulos{
+        margin: 0;
+        width: 25%;
+    }
+    .titulos{
+        width: 15%;
+        margin: 0 auto;
+    }
+    .titulos h2{
+        margin-left: 3%;
+    }
+    .titulos .bi-stop-btn{
+        display: none;
+    }
+    #habilidades{
+        padding: 5%;
+    }
+    #habilidades ul li{
+        height: 180px;
+        padding: 2%;
+        margin: 5% 50% 5% -35%;
+    }
+    .habilidades-icons{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .javascript-icon{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .nivel, .nivel2, .nivel3, .nivel4{
+        width: 100px;
+        height: 5px;
+    }
+    .nivel div{
+        width: 85px;
+    }
+    .nivel2 div{
+        width: 75px;
+    }
+    .nivel3 div{
+        width: 55px;
+    }
+    .nivel4 div{
+        width: 65px;
+    }
+    #portfolio{
+        padding: 5%;
+    }
+    .portfolio-itens{
+        padding: 2%;
+    }
+    .projeto{
+        width: 350px; 
+        height: auto;
+        padding: 5%;
+        margin: 2%;
+    }
+    #projeto1-hover, #projeto2-hover{
+        width: 275px;
+        height: 390px;
+    }
+    .projeto-hover-tec{
+        width: 275px;
+    }
+    #projeto1-hover button, #projeto2-hover button{
+        max-width: 100px;
+        padding: 5%;
+        margin: 1%;
+    }
+    .botao2{
+        width: 100px;
+        height: auto;
+        padding: 5%;
+        margin: 1%;
+    }
+    .projeto-img{
+        width: 275px;
+        height: 275px;
+        margin-bottom: 5%;
+    }
+    #blog{
+        padding: 2% 0;
+    }
+    #blog .botao:nth-child(1){
+        width: 100px;
+        height: auto;
+        padding: 1%;
+        margin: 0 auto;
+    }
+    .posts{
+        margin: 0 auto;
+        padding: 5% 0;
+    }
+    #post{
+        width: 100%;
+        padding: 3%;
+        margin: 2% auto 5% auto;
+    }
+    #contato{
+            padding: 5%;
+    }
+    #contato p{
+        width: 50%;
+        margin: 2% auto;
+    }
+    .contato-itens{
+        width: 75%;
+        padding: 4%;
+    }
+    .contato-item{
+        width: 40%;
+        margin: 2% auto;
+    }
+    .contato-item span{
+        margin: 0 2%;
+    }
+    footer{
+        padding: 1.5%;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px){
+    body{
+        font-size: .95rem;
+    }
+    nav{
+        flex-direction: column;
+        background-color: whitesmoke;
+        justify-content: space-around;
+        overflow: hidden;
+        padding: 2%;
+    }
+    .hamburger-menu{
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo{
+        left: 0;
+        width: 50px;
+    }
+    #botao-menu{
+        display: block;
+        background: transparent;
+        border: 2px solid rgb(46, 54, 75);
+        border-radius: 10px;
+    }
+    #botao-menu:hover{
+        transition: .5s;
+        background-color: grey;
+    }
+    #lista{
+        display: none;
+    }
+    .bi-list{
+        fill: rgb(46, 54, 75);
+        width: 40px;
+    }
+    .projeto-login{
+        width: 40%;
+        padding: 1%;
+        margin: 2% 4%;
+    }
+    nav ul{
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: 2% 0;
+    }
+    nav ul li a{
+        color: rgb(46, 54, 75);
+    }
+    nav ul li a:hover{
+        font-weight: bold;
+        color: #00546b;
+    }
+    .cabecalho{
+        padding: 7% 1%;
+    }
+    .cabecalho-descricao{
+        width: 60%;
+        margin: 4%;
+    }
+    .cabecalho-descricao p{
+        margin-bottom: 5%;
+    }
+    .botao{
+        padding: 1.5% 4%;
+    }
+    #lista li .botao{
+        color: rgb(46, 54, 75);
+        border: solid 2px rgb(46, 54, 75);
+        margin-left: -25%;
+        padding: 10% 50%;
+    }
+    #lista li .botao:hover{
+        transition: .5s;
+        background-color: rgb(46, 54, 75);
+        color: whitesmoke;
+        border: none;
+    }
+    .cabecalho-img{
+        width: 40%;
+        margin: 4%;
+    }
+    #sobre{
+        padding: 7% 1%;
+    }
+    .perfil{
+        width: 35%;
+        padding: 4%;
+    }
+    #eu{
+        width: 250px;
+        padding: 2%;
+        border-radius: 50%;
+    }
+    .perfil-desc ul li{
+        margin: 2% 25% 2% -8%;
+    }
+    .bi-linkedin, .bi-facebook, .bi-github, .bi-envelope-open-fill, .bi-telephone-outbound-fill{
+        width: 30px;
+    }
+    #habilidades ul{
+        margin: 2% auto;
+    }
+    .descricao{
+        width: 65%;
+        padding: 4%;
+    }
+    .descricao .titulos{
+        display: none;
+    }
+    .titulos .bi-stop-btn{
+        display: none;
+    }
+    #habilidades{
+        padding: 5%;
+    }
+    #habilidades ul li{
+        height: 180px;
+        padding: 2%;
+        margin: 5% 50% 5% -35%;
+    }
+    .habilidades-icons{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .javascript-icon{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .nivel, .nivel2, .nivel3, .nivel4{
+        width: 100px;
+        height: 5px;
+    }
+    .nivel div{
+        width: 85px;
+    }
+    .nivel2 div{
+        width: 75px;
+    }
+    .nivel3 div{
+        width: 55px;
+    }
+    .nivel4 div{
+        width: 65px;
+    }
+    #portfolio{
+        padding: 5%;
+    }
+    .portfolio-itens{
+        padding: 2%;
+    }
+    .projeto{
+        width: 350px; 
+        height: auto;
+        padding: 5%;
+        margin: 2%;
+    }
+    #projeto1-hover, #projeto2-hover{
+        width: 275px;
+        height: 390px;
+    }
+    .projeto-hover-tec{
+        width: 275px;
+    }
+    #projeto1-hover button, #projeto2-hover button{
+        max-width: 100px;
+        padding: 5%;
+        margin: 1%;
+    }
+    .botao2{
+        width: 100px;
+        height: auto;
+        padding: 5%;
+        margin: 1%;
+    }
+    .projeto-img{
+        width: 275px;
+        height: 275px;
+        margin-bottom: 5%;
+    }
+    #blog{
+        padding: 2% 0;
+    }
+    #blog .botao:nth-child(1){
+        width: 120px;
+        height: auto;
+        padding: 1%;
+        margin: 0 auto;
+    }
+    .posts{
+        margin: 0 auto;
+        padding: 5% 0;
+    }
+    #post{
+        width: 85%;
+        padding: 3%;
+        margin: 2% auto 5% auto;
+    }
+    #contato{
+            padding: 5%;
+    }
+    #contato p{
+        width: 50%;
+        margin: 2% auto;
+    }
+    .contato-itens{
+        width: 75%;
+        padding: 4%;
+    }
+    .contato-item{
+        width: 40%;
+        margin: 2% auto;
+    }
+    .contato-item span{
+        margin: 0 2%;
+    }
+    footer{
+        padding: 1.5%;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px){
+    body{
+        font-size: 1.1rem;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 2% 5%;
+    }
+    #logo{
+        width: 55px;
+    }
+    nav ul{
+        width: 50%;
+    }
+    nav ul li{
+        margin: 0 4%;
+    }
+    nav ul li a:hover{
+        padding-bottom: 7%;
+        border-width: 3px;
+    }
+    .projeto-login{
+        width: 25%;
+        padding: 0;
+        margin: 1% 3.5%;
+    }
+    .cabecalho{
+        padding: 5% 1%;
+    }
+    .cabecalho-descricao{
+        width: 60%;
+        margin: 4%;
+    }
+    .cabecalho-descricao p{
+        margin-bottom: 5%;
+    }
+    .botao{
+        padding: 1.5% 4%;
+    }
+    .botao:nth-child(1){
+        padding: 10% 50%;
+    }
+    .cabecalho-img{
+        width: 40%;
+        margin: 4%;
+    }
+    .perfil{
+        width: 35%;
+        padding: 4%;
+    }
+    #eu{
+        width: 250px;
+        padding: 2%;
+        border-radius: 50%;
+    }
+    .perfil-desc ul li{
+        margin: 2% 25% 2% -8%;
+    }
+    .bi-linkedin, .bi-facebook, .bi-github, .bi-envelope-open-fill, .bi-telephone-outbound-fill{
+        width: 30px;
+    }
+    #habilidades ul{
+        margin: 2% auto;
+    }
+    .descricao{
+        width: 65%;
+        padding: 4%;
+    }
+    .descricao .titulos{
+        margin: 0;
+        width: 25%;
+    }
+    .titulos{
+        width: 15%;
+        margin: 0 auto;
+    }
+    .titulos h2{
+        margin-left: 3%;
+    }
+    .titulos .bi-stop-btn{
+        width: 28px;
+    }
+    #habilidades{
+        padding: 5%;
+    }
+    #habilidades ul li{
+        height: 180px;
+        padding: 2%;
+        margin: 5% 50% 5% -35%;
+    }
+    .habilidades-icons{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .javascript-icon{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .nivel, .nivel2, .nivel3, .nivel4{
+        width: 100px;
+        height: 5px;
+    }
+    .nivel div{
+        width: 85px;
+    }
+    .nivel2 div{
+        width: 75px;
+    }
+    .nivel3 div{
+        width: 55px;
+    }
+    .nivel4 div{
+        width: 65px;
+    }
+    #portfolio{
+        padding: 5%;
+    }
+    .portfolio-itens{
+        padding: 2%;
+    }
+    .projeto{
+        width: 350px; 
+        height: auto;
+        padding: 5%;
+        margin: 2%;
+    }
+    #projeto1-hover, #projeto2-hover{
+        width: 275px;
+        height: 390px;
+    }
+    .projeto-hover-tec{
+        width: 275px;
+    }
+    #projeto1-hover button, #projeto2-hover button{
+        max-width: 100px;
+        padding: 5%;
+        margin: 1%;
+    }
+    .botao2{
+        width: 100px;
+        height: auto;
+        padding: 5%;
+        margin: 1%;
+    }
+    .projeto-img{
+        width: 275px;
+        height: 275px;
+        margin-bottom: 5%;
+    }
+    #blog{
+        padding: 2% 0;
+    }
+    #blog .botao:nth-child(1){
+        width: 120px;
+        height: auto;
+        padding: 1%;
+        margin: 0 auto;
+    }
+    .posts{
+        margin: 0 auto;
+        padding: 2% 0;
+    }
+    #post{
+        width: 85%;
+        padding: 3%;
+        margin: 2% auto;
+    }
+    #contato{
+            padding: 5%;
+    }
+    #contato p{
+        width: 50%;
+        margin: 2% auto;
+    }
+    .contato-itens{
+        width: 75%;
+        padding: 4%;
+    }
+    .contato-item{
+        width: 40%;
+        margin: 2% auto;
+    }
+    .contato-item span{
+        margin: 0 2%;
+    }
+    footer{
+        padding: 1.5%;
+    }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px){
+    body{
+        font-size: 1.1rem;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 2% 5%;
+    }
+    #logo{
+        width: 60px;
+    }
+    nav ul{
+        width: 50%;
+    }
+    nav ul li{
+        margin: 0 4%;
+    }
+    nav ul li a:hover{
+        padding-bottom: 7%;
+        border-width: 3px;
+    }
+    .projeto-login{
+        width: 25%;
+        padding: 0;
+        margin: 1% 3.5%;
+    }
+    .cabecalho{
+        padding: 5% 1%;
+    }
+    .cabecalho-descricao{
+        width: 60%;
+        margin: 4%;
+    }
+    .cabecalho-descricao p{
+        margin-bottom: 5%;
+    }
+    .botao{
+        margin: 3% 0;
+        padding: 1.5% 4%;
+    }
+    .botao:nth-child(1){
+        padding: 10% 50%;
+    }
+    .cabecalho-img{
+        width: 40%;
+        margin: 4%;
+    }
+    .perfil{
+        width: 35%;
+        padding: 4%;
+    }
+    #eu{
+        width: 250px;
+        padding: 2%;
+        border-radius: 50%;
+    }
+    .perfil-desc ul li{
+        margin: 2% 25% 2% -8%;
+    }
+    .bi-linkedin, .bi-facebook, .bi-github, .bi-envelope-open-fill, .bi-telephone-outbound-fill{
+        width: 30px;
+    }
+    #habilidades ul{
+        margin: 2% auto;
+    }
+    .descricao{
+        width: 65%;
+        padding: 4%;
+    }
+    .descricao .titulos{
+        margin: 0;
+        width: 35%;
+    }
+    .titulos{
+        width: 15%;
+        margin: 0 auto;
+    }
+    .titulos h2{
+        margin-left: 3%;
+    }
+    .titulos .bi-stop-btn{
+        width: 30px;
+    }
+    #habilidades{
+        padding: 5%;
+    }
+    #habilidades ul li{
+        height: 180px;
+        padding: 2%;
+        margin: 5% 50% 5% -35%;
+    }
+    .habilidades-icons{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .javascript-icon{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .nivel, .nivel2, .nivel3, .nivel4{
+        width: 100px;
+        height: 5px;
+    }
+    .nivel div{
+        width: 85px;
+    }
+    .nivel2 div{
+        width: 75px;
+    }
+    .nivel3 div{
+        width: 55px;
+    }
+    .nivel4 div{
+        width: 65px;
+    }
+    #portfolio{
+        padding: 5%;
+    }
+    .portfolio-itens{
+        padding: 2%;
+    }
+    .projeto{
+        width: 350px; 
+        height: auto;
+        padding: 5%;
+        margin: 2%;
+    }
+    #projeto1-hover, #projeto2-hover{
+        width: 275px;
+        height: 390px;
+    }
+    .projeto-hover-tec{
+        width: 275px;
+    }
+    #projeto1-hover button, #projeto2-hover button{
+        max-width: 100px;
+        padding: 5%;
+        margin: 1%;
+    }
+    .botao2{
+        width: 100px;
+        height: auto;
+        padding: 5%;
+        margin: 1%;
+    }
+    .projeto-img{
+        width: 275px;
+        height: 275px;
+        margin-bottom: 5%;
+    }
+    #blog{
+        padding: 2% 0;
+    }
+    #blog .botao:nth-child(1){
+        width: 120px;
+        height: auto;
+        padding: 1%;
+        margin: 0 auto;
+    }
+    .posts{
+        margin: 0 auto;
+        padding: 2% 0;
+    }
+    #post{
+        width: 85%;
+        padding: 3%;
+        margin: 2% auto;
+    }
+    #contato{
+            padding: 5%;
+    }
+    #contato p{
+        width: 50%;
+        margin: 2% auto;
+    }
+    .contato-itens{
+        width: 75%;
+        padding: 4%;
+    }
+    .contato-item{
+        width: 40%;
+        margin: 2% auto;
+    }
+    .contato-item span{
+        margin: 0 2%;
+    }
+    footer{
+        width: 100%;
+        padding: 1.5%;
+    }
+}
+
+/* Devices with 1400px and 1920px */
+@media (min-width: 1400px) and (max-width: 1920px){
+    body{
+        font-size: 1.1rem;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 2% 5%;
+    }
+    #logo{
+        width: 60px;
+    }
+    nav ul{
+        width: 50%;
+    }
+    nav ul li{
+        margin: 0 4%;
+    }
+    nav ul li a:hover{
+        padding-bottom: 7%;
+        border-width: 3px;
+    }
+    .projeto-login{
+        width: 30%;
+        padding: 0;
+        margin: 1% 5%;
+    }
+    .cabecalho{
+        padding: 5% 1%;
+    }
+    .cabecalho-descricao{
+        width: 60%;
+        margin: 4%;
+    }
+    .cabecalho-descricao p{
+        margin-bottom: 5%;
+    }
+    .botao{
+        margin: 5% 0;
+        padding: 1.5% 4%;
+    }
+    .botao:nth-child(1){
+        padding: 10% 50%;
+    }
+    .cabecalho-img{
+        width: 40%;
+        margin: 4%;
+    }
+    .perfil{
+        width: 35%;
+        padding: 4%;
+    }
+    #eu{
+        width: 250px;
+        padding: 2%;
+        border-radius: 50%;
+    }
+    .perfil-desc ul li{
+        margin: 2% 25% 2% -8%;
+    }
+    .bi-linkedin, .bi-facebook, .bi-github, .bi-envelope-open-fill, .bi-telephone-outbound-fill{
+        width: 30px;
+    }
+    #habilidades ul{
+        margin: 2% auto;
+    }
+    .descricao{
+        width: 65%;
+        padding: 4%;
+    }
+    .descricao .titulos{
+        margin: 0;
+        width: 25%;
+    }
+    .titulos{
+        width: 15%;
+        margin: 0 auto;
+    }
+    .titulos h2{
+        margin-left: 3%;
+    }
+    .titulos .bi-stop-btn{
+        width: 36px;
+    }
+    #habilidades{
+        padding: 5%;
+    }
+    #habilidades ul li{
+        height: 180px;
+        padding: 2%;
+        margin: 5% 50% 5% -35%;
+    }
+    .habilidades-icons{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .javascript-icon{
+        width: 75px;
+        margin: 10% 5%;
+    }
+    .nivel, .nivel2, .nivel3, .nivel4{
+        width: 100px;
+        height: 5px;
+    }
+    .nivel div{
+        width: 85px;
+    }
+    .nivel2 div{
+        width: 75px;
+    }
+    .nivel3 div{
+        width: 55px;
+    }
+    .nivel4 div{
+        width: 65px;
+    }
+    #portfolio{
+        padding: 5%;
+    }
+    .portfolio-itens{
+        padding: 2%;
+    }
+    .projeto{
+        width: 350px; 
+        height: auto;
+        padding: 5%;
+        margin: 2%;
+    }
+    #projeto1-hover, #projeto2-hover{
+        width: 275px;
+        height: 390px;
+    }
+    .projeto-hover-tec{
+        width: 275px;
+    }
+    #projeto1-hover button, #projeto2-hover button{
+        max-width: 120px;
+        padding: 5%;
+        margin: 1%;
+    }
+    .botao2{
+        width: 100px;
+        height: auto;
+        padding: 2%;
+        margin: 1%;
+    }
+    .projeto-img{
+        width: 275px;
+        height: 275px;
+        margin-bottom: 5%;
+    }
+    #blog{
+        padding: 5%;
+    }
+    #blog .botao:nth-child(1){
+        width: 120px;
+        height: auto;
+        padding: 1%;
+        margin: 0 auto;
+    }
+    .posts{
+        margin: 0 auto;
+        padding: 2.5%;
+    }
+    #post{
+        width: 85%;
+        padding: 3%;
+        margin: 2% auto 4% auto;
+    }
+
+    #contato{
+            padding: 5%;
+    }
+    #contato p{
+        width: 50%;
+        margin: 2% auto;
+    }
+    .contato-itens{
+        width: 75%;
+        padding: 4%;
+    }
+    .contato-item{
+        width: 40%;
+        margin: 2% auto;
+    }
+    .contato-item span{
+        margin: 0 2%;
+    }
+    footer{
+        width: 100%;
+        padding: 1.5%;
+    }
+}

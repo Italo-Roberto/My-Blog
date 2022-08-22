@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main id="habilidades">
+    <form action="loginUser/" method="post" class="projeto">{% csrf_token %}
+        <h1>Login</h1>
+        {{form.as_p}}
+        <button type="submit" class="botao">Login</button>
+    </form>
+    {% if messages %}
+        {% for message in messages %}
+        <strong>
+            {{message}}
+        </strong>
+        {% endfor %}
+    {% endif %}
+</main>
+
+{% endblock %}

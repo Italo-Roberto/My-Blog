@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<main id="formulario">
+    <form action="/save_post/" method="post">{% csrf_token %}
+        <h2>Nova Postagem</h2>
+        <div class="form-group">
+            <input type="text" name="titulo" class="form-control" placeholder="Título">
+        </div>
+        <div class="form-group">
+            <input type="text" name="descricao" class="form-control" placeholder="Descrição">
+        </div>
+        <div class="form-group">
+            <textarea name="conteudo" id="conteudo" cols="25" rows="20"></textarea>
+        </div>
+            <input type="submit" class="botao" style="width: 25%;" value="Postar">
+    </form>
+
+</main>
+
+<script>
+    tinymce.init({
+        selector: '#conteudo',
+        plugins: [
+            'advlist autolink link image list media'
+        ]
+    })
+</script>
+{% endblock %}

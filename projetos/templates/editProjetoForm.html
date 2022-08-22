@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<main id="formulario">
+    <form action="editProjeto/{{projeto.id}}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+
+            <div class="form-group">
+                <label>Título</label>
+                <input type="text" name="titulo" class="form-control" value="{{projeto.titulo}}">
+            </div>
+            <div class="form-group">
+                <label>Descrição</label>
+                <input type="text" name="descricao" class="form-control" value="{{projeto.descricao}}">
+            </div>
+            <div class="form-group">
+                <label>Tecnologias</label>
+                <input type="text" name="tecnologias" class="form-control" value="{{projeto.tecnologias}}">
+            </div>
+            <div class="form-group">
+                <label>Detalhes</label>
+                <textarea name="detalhes" class="form-control" cols="30" rows="10">{{projeto.detalhes}}</textarea>
+            </div>
+            <div class="form-group">
+                <label>Link</label>
+                <input type="text" name="link" class="form-control" value="{{projeto.link}}">
+            </div>
+            <div class="form-group">
+                <label>Imagem</label>
+                <input type="file" name="foto" class="form-control" value="{{projeto.foto.url}}">
+            </div>
+        </div>
+        <button type="submit" class="botao w-25">Salvar</button>
+    </form>
+</main>
+{% endblock %}
