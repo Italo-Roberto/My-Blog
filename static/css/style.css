@@ -126,6 +126,9 @@ h1, h2, h3, h4, h5{
 .bi-linkedin, .bi-github, .bi-telephone-outbound-fill, .bi-envelope-open-fill, .bi-facebook{
     fill: turquoise;
 }
+.bi-envelope-open-fill:nth-child(1){
+    flex-shrink: 0;
+}
 .descricao{
     display: flex;
     flex-direction: column;
@@ -136,8 +139,11 @@ h1, h2, h3, h4, h5{
     justify-content: center;
     align-items: flex-start;
 }
-.titulos .bi-stop-btn{
+.bi-stop-btn{
     fill: turquoise;
+}
+.bi-stop-btn:nth-child(1){
+    flex-shrink: 0;
 }
 
 /* Seção de habilidades */
@@ -1340,8 +1346,8 @@ footer strong{
     .titulos h2{
         margin-left: 3%;
     }
-    .titulos .bi-stop-btn{
-        width: 30px;
+    .bi-stop-btn{
+        width: 32px;
     }
     #habilidades{
         padding: 5%;
@@ -1533,7 +1539,7 @@ footer strong{
     .titulos h2{
         margin-left: 3%;
     }
-    .titulos .bi-stop-btn{
+    .bi-stop-btn{
         width: 36px;
     }
     #habilidades{

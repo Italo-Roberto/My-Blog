@@ -28,6 +28,7 @@ urlpatterns = [
     path('addProjetoForm/addProjeto/', views.addProjeto),
     path('editProjetoForm/<int:projeto_id>', views.editProjetoForm),
     path('editProjetoForm/editProjeto/<int:projeto_id>', views.editProjeto),
+    path('deleteProjeto/<int:projeto_id>', views.deleteProjeto),
     #Rotas para blog
     path('', include('blog.urls'))
 ]

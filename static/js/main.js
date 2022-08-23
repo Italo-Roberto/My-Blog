@@ -9,16 +9,17 @@ $(document).ready(function () {
     });
 });
 
+//Efeitos para itens dos projetos
 var projetos = document.querySelectorAll('.projeto')
-
 projetos.forEach(projeto => {
     $(projeto).mouseenter(function () { 
-        $('.projeto-inner').hide('slow');
-        $('.projeto-hover').show('slow');
+    //Usando this para efeito acontecer por item individual e não simultaneamente
+        $('.projeto-inner', this).hide('slow');
+        $('.projeto-hover', this).show('slow');
     });
     $(projeto).mouseleave(function () { 
-        $('.projeto-inner').show('slow');
-        $('.projeto-hover').hide('slow');
+        $('.projeto-inner', this).show('slow');
+        $('.projeto-hover', this).hide('slow');
     });
 });
 

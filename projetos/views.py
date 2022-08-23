@@ -42,3 +42,10 @@ def editProjeto(request, projeto_id):
             return redirect('/')
         else:
             return redirect(f'editProjetoForm/editProjeto/{projeto_id}')
+
+#View para deletar projeto
+@login_required(login_url='/loginForm/loginUser/')
+def deleteProjeto(request, projeto_id):
+    projeto = get_object_or_404(Projeto, id=projeto_id)
+    projeto.delete()
+    return redirect('/')
