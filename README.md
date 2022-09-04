@@ -11,8 +11,6 @@
     <li>Jquery</li>
 </ul>
 
-<hr>
-
 <p>
     Este projeto serve de base para qualquer blog básico que utilize o django. Neste projeto foi utilizando o módulo de autenticação padrão do django para login e cadastro de usuários, armazenamento de imagens e conexão com base de dados relacional (MySql). A página se divide nas seguinte seções: Cabeçalho com a sinformações principais sobre o autor, portfólio de projetos publicados, lista de postagens e informações de contato.
 </p>
