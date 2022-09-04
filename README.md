@@ -31,10 +31,10 @@
   <strong>Instalação</strong>
   
   Clone este repositório para sua máquina:      
-`git clone https://github.com/Italo-Roberto/myblog.git`
+`git clone https://github.com/Italo-Roberto/novo_blog.git`
   
   Após realizar o clone do repositório, entre no diretório <strong>myblog</strong> e crie uma Virtualenv: <br>
- `cd myblog/`
+ `cd novo_blog/`
  `virtualenv nome_veenv`
 
   Necessário ativar veenv após sua criação: <br>
@@ -44,8 +44,17 @@
   Agora iremos instalar os pacotes necessário para rodar o projeto, através do arquivo requirements.txt (incluindo o Django) <br>
  `pip install -r requirements.txt`
 
-  Necessário criar a tabela no banco de dados por comando <br>
+  Após a instalação e configuração iniciais do Mysql Community Server, crie um usuário para acessar o banco: <br>
+  `CREATE USER 'nome_usuario'@'localhost' IDENTIFIED BY 'sua_senha';`
+  
+  Não esqueça de coneder permissões ao mesmo: <br>
+  `GRANT ALL PRIVILEGES ON * . * TO 'nome_usuario'@'localhost';`
+  
+  Necessário criar a tabela no banco de dados com o comando <br>
  `CREATE DATABASE db_name;`
+ 
+ Para que as credenciais sejam salvas de maneira segura, crie um arquivo .env na raiz do projeto, contendo crendencias de banco e SECRET_KEY do Django: <br>
+ `touch .env`
 
   Antes de inicar o projeto, devemos fazer a migrações iniciais das tabelas no banco de dados <br>
  `python manage.py migrate`
