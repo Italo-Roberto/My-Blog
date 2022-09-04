@@ -42,7 +42,7 @@
   Windows: `nome_veenv/Scripts/Activate`
   
   Agora iremos instalar os pacotes necessário para rodar o projeto, através do arquivo requirements.txt (incluindo o Django) <br>
- `pip install -r requirements.txt`
+  `pip install -r requirements.txt`
 
   Após a instalação e configuração iniciais do Mysql Community Server, crie um usuário para acessar o banco: <br>
   `CREATE USER 'nome_usuario'@'localhost' IDENTIFIED BY 'sua_senha';`
@@ -51,13 +51,16 @@
   `GRANT ALL PRIVILEGES ON * . * TO 'nome_usuario'@'localhost';`
   
   Necessário criar a tabela no banco de dados com o comando <br>
- `CREATE DATABASE db_name;`
+  `CREATE DATABASE db_name;`
  
- Para que as credenciais sejam salvas de maneira segura, crie um arquivo .env na raiz do projeto, contendo crendencias de banco e SECRET_KEY do Django: <br>
- `touch .env`
+  Para que as credenciais sejam salvas de maneira segura, crie um arquivo .env na raiz do projeto, contendo crendencias de banco e SECRET_KEY do Django: <br>
+  `touch .env`
 
   Antes de inicar o projeto, devemos fazer a migrações iniciais das tabelas no banco de dados <br>
- `python manage.py migrate`
+  `python manage.py migrate`
+ 
+  É necessário criar um usuário superadmin para poder modificar registros no banco de dados (comando executado dentro da pasta /novo_blog):
+  `python manage.py createsuperuser`
  
   Iniciando projeto e servidor de desenvolvimento <br>
   `python manage.py runserver`
