@@ -354,6 +354,7 @@ footer strong{
     color: rgb(52, 179, 166);
 }
 
+/* Responsividade */
 /* Small Devices (Smartphones) */
 @media (max-width: 575.98px) {
     body{
@@ -611,7 +612,7 @@ footer strong{
         padding: 1.5%;
     }
 }
-/* Responsividade */
+
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px){
     body{
@@ -775,6 +776,7 @@ footer strong{
         padding: 5%;
     }
     .portfolio-itens{
+        flex-wrap: wrap;
         padding: 2%;
     }
     .projeto{
@@ -1002,6 +1004,7 @@ footer strong{
         padding: 5%;
     }
     .portfolio-itens{
+        flex-wrap: wrap;
         padding: 2%;
     }
     .projeto{
@@ -1193,6 +1196,7 @@ footer strong{
         padding: 5%;
     }
     .portfolio-itens{
+        flex-wrap: wrap;
         padding: 2%;
     }
     .projeto{
@@ -1385,6 +1389,7 @@ footer strong{
         padding: 5%;
     }
     .portfolio-itens{
+        flex-wrap: wrap;
         padding: 2%;
     }
     .projeto{
