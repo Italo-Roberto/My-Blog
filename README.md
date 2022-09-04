@@ -59,7 +59,7 @@
   Antes de inicar o projeto, devemos fazer a migrações iniciais das tabelas no banco de dados <br>
   `python manage.py migrate`
  
-  É necessário criar um usuário superadmin para poder modificar registros no banco de dados (comando executado dentro da pasta /novo_blog):
+  É necessário criar um usuário superadmin para poder modificar registros no banco de dados (comando executado dentro da pasta /novo_blog): <br>
   `python manage.py createsuperuser`
  
   Iniciando projeto e servidor de desenvolvimento <br>
